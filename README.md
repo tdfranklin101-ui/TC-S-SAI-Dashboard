@@ -1,22 +1,28 @@
-# TC-S-SAI-Dashboard
+# TC-S Network SAI Dashboard
 
-Ethics and audit dashboard with UIM visualization
+Solar Audit Intelligence Dashboard for regulatory-grade energy tracking.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- Auditable energy entry tracking
+- Data source verification
+- Category management
+- Compliance reporting
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `GET /api/audit/entries` - List audit entries
+- `GET /api/audit/categories` - List energy categories
+- `GET /api/audit/sources` - List data sources
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
